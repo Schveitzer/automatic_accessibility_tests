@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "description": "automatic accessibility tests for web pages",
+  "author": "Alan Schveitzer",
+  "license": "MIT",
+  "scripts": {
+    "test:open": "npx cypress open",
+    "test:chrome": "npx cypress run --config video=false --env allure=true --browser chrome",
+    "test:chrome:headless": "npx cypress run --headless --config video=false --env allure=true --browser chrome"
+  },
+  "dependencies": {
+    "axe-core": "^4.3.5",
+    "cypress": "^8.7.0",
+    "cypress-axe": "^0.13.0"
+  }
+}
+
